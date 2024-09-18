@@ -1,0 +1,70 @@
+body {
+    margin: 0; /* Elimina el margen del body */
+    padding: 0; /* Elimina el padding del body */
+    background-color: #f0f4f8; /* Color de fondo suave azul claro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna */
+}
+
+.sidemenu-container {
+    width: 50%; /* Mantén el ancho deseado */
+    height: 100vh; /* Altura de la pantalla */
+    background-color: #a4d3e2; /* Color de fondo azul claro */
+    display: flex; /* Corrige el typo */
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos al inicio */
+    gap: 30px; /* Espacio entre elementos */
+    position: fixed; /* Mantiene el menú fijo */
+    top: 0; /* Alinea al inicio */
+    left: 0; /* Alinea al borde izquierdo */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2); /* Sombra a la derecha */
+}
+
+.items-container {
+    flex: 1; /* Permite que este contenedor ocupe el espacio disponible */
+    overflow-y: auto; /* Habilita el desplazamiento vertical si es necesario */
+    padding: 10px; /* Espacio interno */
+}
+
+.item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    margin-left: 20px; /* Margen izquierdo */
+}
+
+.item p {
+    width: 75%; /* Mantiene el ancho del texto */
+    text-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    color: #333; /* Color del texto más oscuro para contraste */
+}
+
+img {
+    width: 50px;
+    border-radius: 50%; /* Bordes redondeados para imágenes */
+    border: 2px solid #fff; /* Borde blanco alrededor de la imagen */
+}
+
+/* Estilos de los botones */
+.btn {
+    padding: 10px 20px; /* Espaciado interno de los botones */
+    background-color: #ffcc80; /* Naranja suave claro */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    font-size: 16px; /* Tamaño de la fuente */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.btn:hover {
+    background-color: #ffab40; /* Color al pasar el mouse */
+}
+
+/* Efectos de los elementos */
+.item:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Efecto suave al pasar el mouse */
+}
