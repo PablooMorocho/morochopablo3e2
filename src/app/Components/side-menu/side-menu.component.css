@@ -1,14 +1,14 @@
 body {
     margin: 0; /* Elimina el margen del body */
     padding: 0; /* Elimina el padding del body */
-    background-color: #f0f4f8; /* Color de fondo suave azul claro */
+    background-color: #e0f7fa; /* Color de fondo suave azul claro */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna */
 }
 
 .sidemenu-container {
     width: 50%; /* Mantén el ancho deseado */
     height: 100vh; /* Altura de la pantalla */
-    background-color: #a4d3e2; /* Color de fondo azul claro */
+    background-color: #00695c; /* Verde oscuro sofisticado */
     display: flex; /* Corrige el typo */
     flex-direction: column;
     align-items: flex-start; /* Alinea los elementos al inicio */
@@ -16,7 +16,7 @@ body {
     position: fixed; /* Mantiene el menú fijo */
     top: 0; /* Alinea al inicio */
     left: 0; /* Alinea al borde izquierdo */
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2); /* Sombra a la derecha */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3); /* Sombra a la derecha */
 }
 
 .items-container {
@@ -39,19 +39,19 @@ body {
     display: flex;
     gap: 10px;
     font-size: 20px;
-    color: #333; /* Color del texto más oscuro para contraste */
+    color: #ffffff; /* Color del texto blanco */
 }
 
 img {
     width: 50px;
     border-radius: 50%; /* Bordes redondeados para imágenes */
-    border: 2px solid #fff; /* Borde blanco alrededor de la imagen */
+    border: 2px solid #ffffff; /* Borde blanco alrededor de la imagen */
 }
 
 /* Estilos de los botones */
 .btn {
     padding: 10px 20px; /* Espaciado interno de los botones */
-    background-color: #ffcc80; /* Naranja suave claro */
+    background-color: #ffb74d; /* Naranja suave */
     color: #fff; /* Color del texto */
     border: none; /* Sin borde */
     border-radius: 5px; /* Bordes redondeados */
@@ -61,10 +61,33 @@ img {
 }
 
 .btn:hover {
-    background-color: #ffab40; /* Color al pasar el mouse */
+    background-color: #ffa726; /* Color al pasar el mouse */
 }
 
 /* Efectos de los elementos */
 .item:hover {
     background-color: rgba(255, 255, 255, 0.1); /* Efecto suave al pasar el mouse */
+}
+
+/* Estilos para el texto fijo */
+.fixed-text {
+    
+    top: 20px; /* Ajusta según sea necesario */
+    left: 55%; /* Alineado al lado derecho del menú */
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 10px;
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    z-index: 10; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+button{
+    padding: 10px 20px; /* Espaciado interno de los botones */
+    background-color: #ffcc80; /* Naranja suave claro */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    font-size: 16px; /* Tamaño de la fuente */
+    transition: background-color 0.3s; /* Transición suave */
 }

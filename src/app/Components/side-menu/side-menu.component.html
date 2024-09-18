@@ -8,19 +8,24 @@
         <img src="https://i1.sndcdn.com/artworks-MA9IP0uipzLgGflb-ODiqJg-t1080x1080.jpg" alt="image.png">
         <p>{{userName}}</p>
         <button (click)="alternateVisibility()">Back</button>
+        <div class="fixed-text">
+            Desarrollar un componente de menú 
+            lateral (side-menu) en Angular 
+            que demuestre el uso de Enlace de Datos.
+        </div>
     </div>
 
     <div class="item">
         <p>
             <span style="color: #ff7043;">📅</span>
-            <span onMouseOver="this.style.color='red'" onMouseOut="this.style.color='#333'">Dashboard</span>
+            <span onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">Dashboard</span>
         </p>
     </div>
 
     <div class="item">
         <p>
             <span style="color: #ff7043;">👨</span>
-            <span onMouseOver="this.style.color='red'" onMouseOut="this.style.color='#333'">Profile</span>
+            <span onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">Profile</span>
         </p>
     </div>
 
@@ -29,3 +34,4 @@
         <button class="btn" (click)="setSize()">Change size</button>
     </div>
 </section>
+
